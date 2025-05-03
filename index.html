@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Lovers</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-amber-950 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <h1 class="text-3xl md:text-4xl font-bold">Book Lovers</h1>
+            <button id="menu-btn" class="text-white block md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <nav id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg mt-4 md:mt-0">
+                    <li class="relative group">
+                        <a href="#about" class="hover:underline">About</a>
+                        <div class="absolute hidden bg-white rounded-lg shadow-lg mt-2 p-2 space-y-2 group-hover:block">
+                            <a href="#team" class="block text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Our Team</a>
+                            <a href="#mission" class="block text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Our Mission</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a href="#categories" class="hover:underline">Categories</a>
+                        <div class="absolute hidden bg-white rounded-lg shadow-lg mt-2 p-2 space-y-2 group-hover:block">
+                            <a href="#fiction" class="block text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Fiction</a>
+                            <a href="#nonfiction" class="block text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Non-Fiction</a>
+                            <a href="#biographies" class="block text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Biographies</a>
+                            <a href="#children" class="block text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Children's Books</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a href="#contact" class="hover:underline">Contact</a>
+                        <div class="absolute hidden bg-white rounded-lg shadow-lg mt-2 p-2 space-y-2 group-hover:block">
+                            <a href="#support" class="block text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Support</a>
+                            <a href="#feedback" class="block text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Feedback</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="bg-cover bg-center h-[400px] md:h-[600px]" style="background-image: url('assets/img/cozy.avif');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-60">
+            <div class="text-center text-white px-4 sm:px-6 md:px-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Discover Your Next Great Read</h2>
+                <p class="text-base sm:text-lg mb-8">Explore a diverse collection of books and find your next favorite among our extensive library.</p>
+                <a href="#categories" class="text-white bg-green-700 px-6 md:px-8 py-3 md:py-4 rounded-full text-lg md:text-xl font-semibold hover:bg-green-800 transition duration-300">Browse Books</a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-12 md:py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">About Us</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                <div class="md:w-1/2">
+                    <p class="text-base md:text-lg mb-8">At Book Lovers, we're dedicated to bringing you the finest selection of books from various genres. Our mission is to help you discover new stories, expand your horizons, and enjoy the joy of reading.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="assets/img/about.jpg" alt="Library" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="categories" class="py-12 md:py-20 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Book Categories</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4">Fiction</h3>
+                    <img src="assets/img/fiction.webp" alt="Fiction Books" class="rounded-2xl mb-4">
+                    <p class="text-base md:text-lg">Dive into worlds of imagination and creativity. From thrillers to romances, explore the best in fiction.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4">Non-Fiction</h3>
+                    <img src="assets/img/non-fiction.jpg" alt="Non-Fiction Books" class="rounded-2xl mb-4">
+                    <p class="text-base md:text-lg">Expand your knowledge with insightful non-fiction books on various subjects, including history, science, and self-help.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4">Biographies</h3>
+                    <img src="assets/img/bio.webp" alt="Biographies" class="rounded-2xl mb-4">
+                    <p class="text-base md:text-lg">Discover the lives and achievements of notable figures through captivating biographies and memoirs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4">Children's Books</h3>
+                    <img src="assets/img/children.webp" alt="Children's Books" class="rounded-2xl mb-4">
+                    <p class="text-base md:text-lg">Find enchanting stories and educational books for children of all ages to spark their love for reading.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="featured" class="py-12 md:py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Featured Books</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img class="mx-auto my-4 rounded-full max-h-[480px] w-full object-cover" src="assets/img/six-of-crows.jpg" alt="Six of Crows">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2">Six of Crows</h3>
+                    <p class="text-base md:text-lg">A fantasy novel by Leigh Bardugo, following a thieving crew set in a city inspired by Dutch Republic-era Amsterdam.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img class="mx-auto my-4 rounded-full max-h-[480px] w-full object-cover" src="assets/img/the-perks-of-being-a-wallflower.jpg" alt="The Perks of Being a Wallflower">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2">The Perks of Being a Wallflower</h3>
+                    <p class="text-base md:text-lg">A 1999 young adult novel by Stephen Chbosky about an introverted teenager navigating his freshman year of high school.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img class="mx-auto my-4 rounded-full max-h-[480px] w-full object-cover" src="assets/img/you-get-so-alone-at-times-that-it-just-makes-sense.jpg" alt="You Get So Alone at Times That It Just Makes Sense">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2">You Get So Alone at Times That It Just Makes Sense</h3>
+                    <p class="text-base md:text-lg">An inspirational book for writers encouraging them to break free from literary constraints and publish their work freely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="inspiration" class="py-12 md:py-20 bg-cover bg-center" style="background-image: url('assets/img/inspo.jpg');">
+        <div class="flex items-center justify-center min-h-[300px] md:min-h-[450px] bg-black bg-opacity-50">
+            <div class="text-center text-white px-4 sm:px-6 md:px-12">
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Inspiration Corner</h2>
+                <p class="text-base md:text-lg italic">"The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-12 md:py-20 bg-orange-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Contact Us</h2>
+            <form class="max-w-lg mx-auto p-6 md:p-8 rounded-lg shadow-lg  bg-amber-950">
+                <div class="mb-4">
+                    <label for="name" class="block text-base md:text-lg font-semibold mb-2 text-white">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-base md:text-lg font-semibold mb-2 text-white">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-base md:text-lg font-semibold mb-2 text-white">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg" required></textarea>
+                </div>
+                <button type="submit" class="bg-green-700 text-white px-6 py-3 rounded-lg text-base md:text-lg font-semibold hover:bg-green-800 transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-amber-950 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Book Lovers. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Menu-ja me javascript -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
